@@ -6,6 +6,24 @@
   --border: .1rem solid rgba(255, 255, 255, .3);
 }
 
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -151,6 +169,8 @@ section {
   padding: 20px 60px;
   max-width: 60rem;
   background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: show 1.3s linear forwards;
+          animation: show 1.3s linear forwards;
 }
 
 .home .content h3 {
